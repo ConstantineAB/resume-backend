@@ -28,7 +28,6 @@ class PostService {
         const mebelbest = await Post.find({"index": "mebelbest"})
         return mebelbest;
     }
-   
     async getOne(id) {
         if (!id) {
             throw new Error('Не указан ID')
